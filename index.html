@@ -1,0 +1,732 @@
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Portfolio de Mahery - Développeur Web Full-Stack spécialisé en PHP Laravel, Vue.js, Python et Java">
+    <meta name="keywords" content="développeur web, Laravel, Vue.js, PHP, full-stack, Maurice">
+    <meta name="author" content="Mahery Ifaliana Rasolofomanana">
+    <meta name="robots" content="index, follow">
+    <title>Mahery | Développeur Web et Logiciel</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <!-- Préchargeur -->
+    <div class="preloader" aria-hidden="true" style="display: none;">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Fond de particules -->
+    <!-- <div id="particles-js"></div> -->
+
+    <!-- Navigation -->
+    <header role="banner" class="scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="#home" aria-label="Mandimbisoa - Accueil">Mahery</a>
+            </div>
+            <nav role="navigation">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home" class="" data-lang="nav-home">Accueil</a>
+                    </li>
+                    <li><a href="#about" data-lang="nav-about" class="">À propos</a></li>
+                    <li><a href="#parcours" data-lang="nav-parcours" class="">Parcours</a></li>
+                    <li><a href="#experience-professionnelle" data-lang="nav-experience">Expérience</a></li>
+                    <li><a href="#skills" data-lang="nav-skills" class="">Compétences</a></li>
+                    <li><a href="#projects" data-lang="nav-projects" class="">Projets</a></li>
+                    <li><a href="#contact" data-lang="nav-contact" class="">Contact</a></li>
+                    <li class="theme-toggle" role="button" tabindex="0" aria-label="Basculer le thème">
+                        <i class="fas fa-sun"></i>
+                    </li>
+                    <li class="language-selector">
+                        <button class="language-selector-btn" aria-label="Sélectionner la langue">
+                            <span data-lang="current-lang">FR</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" class="" data-language="fr">Français</a>
+                            <a href="#" data-language="en">English</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="burger" role="button" tabindex="0" aria-label="Menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main role="main">
+        <!-- Section Accueil -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="home-content">
+                    <div class="text-content">
+                        <h1 class="reveal-text active">
+                            <span data-lang="home-greeting">Bonjour, je suis</span>
+                            <span class="highlight" data-lang="home-role-title">Développeur</span>
+                            <span id="role-animated" class="highlight machine-ecrire infinite-typewriter"
+                                data-lang="home-role" aria-live="polite">Web</span>
+                        </h1>
+                        <p class="reveal-text delay-1 active" data-lang="home-description">Spécialisé en développement
+                            web, je crée des solutions modernes, interactives et
+                            performantes adaptées aussi bien aux applications web que aux logiciels métiers.</p>
+                        <div class="cta-buttons reveal-text delay-2 active">
+                            <a href="#projects" class="btn btn-primary" data-lang="home-btn-projects">Voir mes
+                                projets</a>
+                            <a href="#contact" class="btn btn-secondary" data-lang="home-btn-contact">Me contacter</a>
+                        </div>
+                        <div class="social-icons reveal-text delay-3 active">
+                            <a href="https://github.com/blabla" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/blabla" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/blabla" target="_blank" rel="noopener noreferrer"
+                                aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-content reveal-image active">
+                        <div class="profile-image-wrapper">
+                            <div class="particles-wrapper">
+                                <div class="particle particle-1"></div>
+                                <div class="particle particle-2"></div>
+                                <div class="particle particle-3"></div>
+                                <div class="particle particle-4"></div>
+                                <div class="particle particle-5"></div>
+                            </div>
+                            <div class="aura-glow"></div>
+                            <div class="profile-image-container tilt-effect">
+                                <img src="./assets/images/pdp2.jpeg" alt="Mahery Ifaliana" class="profile-image"
+                                    loading="eager">
+                                <div class="shine-effect"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" aria-label="Défiler vers la section À propos">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-lang="about-title">À propos de moi</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-image reveal-image active">
+                        <img src="./assets/images/pdp.jpeg" alt="Mahery" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="reveal-text active" data-lang="about-subtitle">Qui suis-je?</h3>
+                        <p class="reveal-text delay-1 active" data-lang="about-p1">Je suis un développeur
+                            passionné par la création d’applications web modernes, performantes et centrées utilisateur.
+                            J’interviens en front-end et back-end pour concevoir des solutions élégantes et efficaces.
+                        </p>
+                        <p class="reveal-text delay-2 active" data-lang="about-p2">Mon parcours m’a apporté une
+                            expertise en PHP et JavaScript ainsi qu’en HTML, CSS, et jQuery. J’ai aussi de bonnes connaissances en Python et Java</p>
+                        <div class="personal-info reveal-text delay-3 active">
+                            <div class="info-item">
+                                <span class="info-title" data-lang="about-name-label">Nom:</span>
+                                <span class="info-value">RASOLOFOMANANA Mahery Ifaliana</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title" data-lang="about-email-label">Email:</span>
+                                <span class="info-value">maheryifalianaras@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title" data-lang="about-availability-label">Disponibilité:</span>
+                                <span class="info-value" data-lang="about-availability-value">Disponible
+                                    immédiatement</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title" data-lang="about-location-label">Localisation:</span>
+                                <span class="info-value">Quatre-Bornes, Maurice</span>
+                            </div>
+                        </div>
+                        <a href="./assets/images/CV_Mahery.pdf" class="btn btn-primary" target="_blank">
+                            Curriculum Vitae
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Parcours -->
+        <section id="parcours">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2 class="section-title">Etudes et Formations</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Achievement 1 - Right -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Baccalaureat</h3>
+                            <span class="date"></span></br>
+                            <span class="date">Antananarivo, Madagascar</span>
+                            <p>
+                                Etablissement Scolaire La Columba
+                            </p>
+                        </div>
+
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap" style="font-size:30px;"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- Achievement 2 - Left -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Formation Langue Anglaise</h3>
+                            <span class="date"></span>
+                            <span class="date">Antananarivo, Madagascar</span>
+                            <p>
+                                English teaching program
+                            </p>
+                        </div>
+
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap" style="font-size:30px;"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- Achievement 3 - Right -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Formation Cabin Crew</h3>
+                            <span class="date"></span>
+                            <span class="date">Iles Maurice</span>
+                            <p>
+                                G2ACAMAS îles Maurice
+                            </p>
+                        </div>
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap" style="font-size:30px;"></i>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 4 - Left -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>MCCI Business School</h3>
+                            <span class="date"></span>
+                            <span class="date">Iles Maurice</span>
+                            <p>
+                                BTS Informatique
+                            </p>
+                        </div>
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap" style="font-size:30px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-professionnelle" class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2 class="section-title">Expérience Professionnelle</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="experience-grid">
+
+                    <!-- Stage 1 -->
+                    <div class="experience-card reveal-experience">
+                        <h3>Stage Développement Site immobilière</h3>
+                        <span class="date">FRCI LTD</span>
+                        <p>
+                            Participation au développement front-end (HTML, CSS, JavaScript) avec intégration back-end sur le CMS Umbraco
+                        </p>
+                        <ul class="experience-list">
+                            <li>Découpage front-end</li>
+                            <li>Intégration back-end</li>
+                        </ul>
+                    </div>
+
+                    <!-- Stage 2 -->
+                    <div class="experience-card reveal-experience">
+                        <h3>Stage Développement Site E-commerce</h3>
+                        <span class="date">FRCI LTD</span>
+                        <p>
+                            Création d’un site E-commerce avec automatisations avec IA. 
+                        </p>
+                        <ul class="experience-list">
+                            <li>Developpement front-end avec Templates Wordpress</li>
+                            <li>Automatisation et fonctionnalités conditionnelles en back-end </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-lang="skills-title">Mes compétences</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-text reveal-text active">
+                        <p data-lang="skills-description">Voici les technologies et langages de programmation avec
+                            lesquels je travaille. Je m'efforce constamment d'améliorer mes compétences et d'en
+                            apprendre de nouvelles.</p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <!-- Backend -->
+                        <div class="skills-category">
+                            <h3 class="category-title reveal-text active" data-lang="skills-backend-title">Backend</h3>
+                            <div class="category-skills">
+                                <div class="skill-card reveal-card active">
+                                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                                    <h4>PHP</h4>
+                                    <p class="skill-badge">PHP</p>
+                                    <!-- <p class="skill-badge">Laravel</p> -->
+                                </div>
+                                <div class="skill-card reveal-card delay-1 active">
+                                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                                    <h4>Java</h4>
+                                    <p class="skill-badge">JavaFX</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Frontend -->
+                        <div class="skills-category">
+                            <h3 class="category-title reveal-text active" data-lang="skills-frontend-title">Frontend
+                            </h3>
+                            <div class="category-skills">
+                                <div class="skill-card reveal-card active">
+                                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                    <h4>HTML</h4>
+                                    <p class="skill-badge">HTML5</p>
+                                </div>
+                                <div class="skill-card reveal-card delay-1 active">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <h4>CSS</h4>
+                                    <p class="skill-badge">Bootstrap</p>
+                                    <!-- <p class="skill-badge">Tailwind</p> -->
+                                </div>
+                                <!-- <div class="skill-card reveal-card delay-2 active">
+                                    <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                                    <h4>Vue.js</h4>
+                                    <p class="skill-badge">Vue Router</p>
+                                </div> -->
+                                <div class="skill-card reveal-card delay-3 active">
+                                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                    <h4>JavaScript</h4>
+                                    <!-- <p class="skill-badge">ES6+</p> -->
+                                    <p class="skill-badge">jQuery</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Database -->
+                        <div class="skills-category">
+                            <h3 class="category-title reveal-text active" data-lang="skills-database-title">Base de
+                                données</h3>
+                            <div class="category-skills">
+                                <div class="skill-card reveal-card active">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4>MySQL</h4>
+                                    <p class="skill-badge" data-lang="mysql">Relationnelle</p>
+                                </div>
+                                <div class="skill-card reveal-card delay-1 active">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4>PostgreSQL</h4>
+                                    <p class="skill-badge" data-lang="postgresql">Relationnelle</p>
+                                </div>
+                                <!-- <div class="skill-card reveal-card delay-2 active">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-layer-group"></i>
+                                    </div>
+                                    <h4>ORM</h4>
+                                    <p class="skill-badge">SQLAlchemy</p>
+                                    <p class="skill-badge">Eloquent</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- AI / ML -->
+                        <div class="skills-category">
+                            <h3 class="category-title reveal-text active" data-lang="skills-ai-title">CMS (Content
+                                Management System) </h3>
+                            <div class="category-skills">
+                                <div class="skill-card reveal-card active">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-wordpress" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>Wordpress</h4>
+                                    <p class="skill-badge">cms</p>
+                                </div>
+
+
+                                <div class="skill-card reveal-card delay-1 active">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.simpleicons.org/umbraco/3544b1" alt="Umbraco logo">
+                                    </div>
+                                    <h4>Umbraco</h4>
+                                    <p class="skill-badge" data-lang="face">cms</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools -->
+                        <div class="skills-category">
+                            <h3 class="category-title reveal-text active" data-lang="skills-tools-title">Outils</h3>
+                            <div class="category-skills">
+                                <div class="skill-card reveal-card delay-3 active">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                    <h4>Photoshop</h4>
+                                    <p class="skill-badge">Design</p>
+                                </div>
+                                <div class="skill-card reveal-card active">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <h4>IntelliJ</h4>
+                                    <p class="skill-badge">IDE</p>
+                                </div>
+                                <div class="skill-card reveal-card delay-1 active">
+                                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                    <h4>Figma</h4>
+                                    <p class="skill-badge">Design</p>
+                                </div>
+                                <div class="skill-card reveal-card delay-2 active">
+                                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                    <h4>VSCode</h4>
+                                    <p class="skill-badge">IDE</p>
+                                </div>
+                                <div class="skill-card reveal-card delay-3 active">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                    <h4>Make</h4>
+                                    <p class="skill-badge">Automatisation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-lang="projects-title">Mes projets</h2>
+                    <div class="section-line"></div>
+                </div>
+
+
+                <!-- Filtres de projets -->
+                <div class="projects-filter reveal-text delay-2 active">
+                    <button class="filter-btn active" data-filter="all" data-lang="filter-all">Tous</button>
+                    <button class="filter-btn" data-filter="web" data-lang="filter-web">En formation</button>
+                    <button class="filter-btn" data-filter="app" data-lang="filter-app">Applications</button>
+                </div>
+
+                <!-- Grille de projets -->
+                <div class="projects-grid">
+                    <!-- Carte 1 -->
+                    <div class="project-card reveal-card active" data-category="web">
+                        <div class="project-image">
+                            <img src="./assets/images/supercar.png" alt="Système de gestion des patients" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Apllication web - SuperCar</h3>
+                                    <p>PHP • Html CSS • MySQL</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Mandimby2003/GPatient" target="_blank"
+                                            rel="noopener noreferrer" aria-label="Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Apllication web - SuperCar</h3>
+                            <p data-lang="project1-description"></p>
+                            <div class="project-tags">
+                                <a href="./assets/files/Contexte_Supercar.pdf" class="project-tag" target="_blank">Contexte</a>
+                                <a href="presentation.pdf" class="project-tag" target="_blank">Présentation</a>
+                                <a href="fiche.pdf" class="project-tag" target="_blank">Fiche descriptive</a>
+                                <a href="rapport.pdf" class="project-tag" target="_blank">Rapport</a>
+                            </div>
+                            <a href="https://mahery.alwaysdata.net/supercar/accueilprincipal.php" class="btn btn-secondary" target="_blank"
+                                rel="noopener noreferrer">Voir la démo</a>
+                        </div>
+                    </div>
+
+                    <!-- Carte 2 -->
+                    <div class="project-card reveal-card delay-2 active" data-category="web">
+                        <div class="project-image">
+                            <img src="./assets/images/vms.png" alt="Application de gestion de transport"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>VMS</h3>
+                                    <p>Java • PostgreSQL</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Mandimby2003/GTransport" target="_blank"
+                                            rel="noopener noreferrer" aria-label="Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>VMS</h3>
+                            <p data-lang="project3-description"></p>
+                            <div class="project-tags">
+                                <a href="contexte.pdf" class="project-tag" target="_blank">Contexte</a>
+                                <a href="presentation.pdf" class="project-tag" target="_blank">Présentation</a>
+                                <a href="fiche.pdf" class="project-tag" target="_blank">Fiche descriptive</a>
+                                <a href="rapport.pdf" class="project-tag" target="_blank">Rapport</a>
+                            </div>
+                            <a href="https://youtu.be/iH8p9pWZ7dY" class="btn btn-secondary" target="_blank"
+                                rel="noopener noreferrer">Voir la démo</a>
+                        </div>
+                    </div>
+
+                    <!-- Carte 3 -->
+                    <div class="project-card reveal-card delay-3 active" data-category="design">
+                        <div class="project-image">
+                            <img src="./assets/images/harmonie.png" alt="Intégration PSD en site web" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Harmonie</h3>
+                                    <p>HTML • CSS • JS</p>
+                                    <div class="project-links">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Harmonie</h3>
+                            <p data-lang="project4-description"></p>
+                            <div class="project-tags">
+                                <a href="contexte.pdf" class="project-tag" target="_blank">Presentation</a>
+                                <a href="presentation.pdf" class="project-tag" target="_blank">Attestation</a>
+                                <a href="fiche.pdf" class="project-tag" target="_blank">Bilan</a>
+                                <a href="rapport.pdf" class="project-tag" target="_blank">Rapport</a>
+                            </div>
+                            <a href="https://youtube.com/shorts/MD6DgOwazTM" class="btn btn-secondary" target="_blank"
+                                rel="noopener noreferrer">Voir la démo</a>
+                        </div>
+                    </div>
+
+                    <!-- Carte 4 -->
+                    <div class="project-card reveal-card delay-3 active" data-category="design">
+                        <div class="project-image">
+                            <img src="./assets/images/horloge.png" alt="Intégration PSD en site web" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Horlogerie</h3>
+                                    <p>PHP • JS • Wordpress</p>
+                                    <div class="project-links">
+                                        <a href="https://youtube.com/shorts/MD6DgOwazTM" target="_blank"
+                                            rel="noopener noreferrer" aria-label="Demo">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Horlogerie</h3>
+                            <p data-lang="project4-description"></p>
+                            <div class="project-tags">
+                                <a href="contexte.pdf" class="project-tag" target="_blank">Presentation</a>
+                                <a href="presentation.pdf" class="project-tag" target="_blank">Attestation</a>
+                                <a href="fiche.pdf" class="project-tag" target="_blank">Bilan</a>
+                                <a href="rapport.pdf" class="project-tag" target="_blank">Rapport</a>
+                            </div>
+                            <a href="https://youtube.com/shorts/MD6DgOwazTM" class="btn btn-secondary" target="_blank"
+                                rel="noopener noreferrer">Voir la démo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-lang="contact-title">Me contacter</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info reveal-text active">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="contact-location-title">Localisation</h3>
+                                <p>Quatre-Bornes, Maurice</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="contact-email-title">Email</h3>
+                                <p>
+                                    <a href="mailto:maheryifalianaras@gmail.com">maheryifalianaras@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="contact-phone-title">Téléphone</h3>
+                                <p><a href="tel:+23054866772">+230 5486 6772</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 data-lang="contact-linkedin-title">LinkedIn</h3>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/blabla" target="_blank"
+                                        rel="noopener noreferrer">Mahery Rasolofomanana</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form reveal-text delay-1 active">
+                        <h3 data-lang="contact-form-title">Envoyez-moi un message</h3>
+                        <form id="contactForm" method="post" novalidate="">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Votre nom"
+                                    data-lang-placeholder="contact-name-placeholder" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Votre email"
+                                    data-lang-placeholder="contact-email-placeholder" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Sujet"
+                                    data-lang-placeholder="contact-subject-placeholder" required="">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Votre message"
+                                    data-lang-placeholder="contact-message-placeholder" required=""></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary"
+                                data-lang="contact-submit-btn">Envoyer</button>
+                        </form>
+                        <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">Mahery</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/blabla target=" _blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/blabla" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/blabla" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear">2026</span>
+                    <!-- <span data-lang="footer-copyright">Mahery Ifaliana RASOLOFOMANANA. Tous droits réservés.</span> -->
+                    <span data-lang="footer-copyright">Mahery . Tous droits réservés.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <a href="#home" class="back-to-top active" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- <script src="js/particles.js"></script> -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
