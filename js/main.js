@@ -557,4 +557,17 @@ $(document).ready(function () {
         }
     });
 
+     /* ============================
+       ACCORDION – EXTRA SKILLS
+    ============================ */
+    $(".ultra-card").on("click", function () {
+        const isOpen = $(this).hasClass("open");
+
+        $(".ultra-card").removeClass("open");
+
+        if (!isOpen) {
+            $(this).addClass("open");
+        }
+    });
+
 });
