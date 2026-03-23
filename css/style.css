@@ -2357,6 +2357,11 @@ main>section.section:nth-of-type(even) {
 
 
 /* ====== GRILLE 2 PAR 2 EN DESKTOP ====== */
+
+
+
+
+
 @media (min-width: 768px) {
     .projects-grid {
         display: grid;
@@ -2366,10 +2371,65 @@ main>section.section:nth-of-type(even) {
 }
 
 /* ====== En mobile : 1 par ligne ====== */
+
 @media (max-width: 767px) {
     .projects-grid {
         grid-template-columns: 1fr !important;
     }
+}
+
+
+/* conteneur des boutons : ligne avec retour à la ligne si besoin */
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* petit bouton réutilisable */
+.btn-xs {
+    padding: 6px 10px;
+    /* compact */
+    font-size: 0.85rem;
+    /* texte discret */
+    line-height: 1;
+    border-radius: 16px;
+    display: inline-flex;
+    /* s'adapte au contenu */
+    align-items: center;
+    gap: 6px;
+    width: auto;
+    /* ne s'étale pas */
+    white-space: nowrap;
+    /* évite le retour à la ligne dans le bouton */
+}
+
+/* optionnel : si tu veux une variante principale pour attirer l'œil sur 1 bouton */
+.btn-primary.btn-xs {
+    padding: 6px 12px;
+}
+
+.ultra-section {
+    min-height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+    backdrop-filter: blur(12px);
+}
+
+.neon-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #7f5fff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ultra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
 }
 
 
@@ -2454,6 +2514,7 @@ main>section.section:nth-of-type(even) {
 }
 
 /* ROTATION À LA PHP/CSS/GIT POUR LES ICÔNES */
+
 .ultra-card:hover .card-icon {
     transform: rotate(360deg) scale(1.1);
     transition: transform 0.8s ease-in-out;
