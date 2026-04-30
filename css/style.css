@@ -2543,3 +2543,73 @@ main>section.section:nth-of-type(even) {
     }
 }
 
+
+
+
+
+
+.glpi-section {
+    margin-top: 80px;
+    padding: 60px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.02);
+}
+
+.glpi-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.glpi-header i {
+    font-size: 30px;
+    color: #00a2ff;
+}
+
+.glpi-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.glpi-intro {
+    font-size: 17px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.glpi-section h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #00a2ff;
+}
+
+.glpi-section p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.glpi-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.glpi-images img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.glpi-list {
+    margin-top: 20px;
+}
+
+.glpi-list li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+
+
