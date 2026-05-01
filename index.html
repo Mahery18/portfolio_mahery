@@ -640,52 +640,93 @@
 
 
                 <!-- SECTION GLPI -->
-                    <section class="glpi-section">
+                    
+                <section class="glpi-section">
 
-                        <div class="glpi-header">
-                            <i class="fas fa-network-wired"></i>
-                            <h2>GLPI - Gestion de Parc Informatique</h2>
+                    <div class="glpi-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h2>GLPI - Gestion de Parc Informatique</h2>
+                    </div>
+
+                    <p class="glpi-intro">
+                        Mise en place d’une solution GLPI permettant de centraliser la gestion du parc informatique,
+                        le suivi des équipements, l’inventaire automatique des postes et la gestion du support IT.
+                        Cette solution offre une vision globale du système d'information et facilite la gestion des incidents.
+                    </p>
+
+                    <h3>Objectifs du projet</h3>
+                    <p>
+                        L’objectif principal est de disposer d’un outil capable de recenser l’ensemble des ressources
+                        informatiques : matériels, logiciels, utilisateurs et tickets d’assistance.
+                        GLPI permet également d’optimiser la gestion des interventions et d’améliorer la traçabilité
+                        des actions réalisées par les équipes IT.
+                    </p>
+
+                    <h3>Mise en place technique</h3>
+                    <p>
+                        Le projet comprend l’installation de GLPI en local avec un environnement MAMP,
+                        la configuration du serveur web et de la base de données,
+                        ainsi que l’intégration de GLPI Agent pour automatiser la collecte des informations
+                        sur les postes clients.
+                    </p>
+
+                    <!-- DETAILS AVEC IMAGES -->
+                    <div class="glpi-details">
+
+                        <!-- Tableau de bord -->
+                        <div class="glpi-block">
+                            <h3>Tableau de bord</h3>
+                            <p>
+                                Le tableau de bord de GLPI constitue l’interface principale permettant d’avoir une vision globale
+                                du système d’information. Il regroupe des indicateurs essentiels tels que le nombre de tickets ouverts,
+                                les incidents en cours de traitement, ainsi que les statistiques liées aux équipements.
+                                Cet écran permet aux administrateurs de suivre en temps réel l’activité du support IT
+                                et de prioriser les interventions en fonction de l’urgence.
+                            </p>
+                            <img src="./assets/images/Tableau_de_bord.png" class="glpi-img">
                         </div>
 
-                        <p class="glpi-intro">
-                            Mise en place d’une solution GLPI permettant de centraliser la gestion du parc informatique,
-                            le suivi des équipements, l’inventaire automatique des postes et la gestion du support IT.
-                            Cette solution offre une vision globale du système d'information et facilite la gestion des incidents.
-                        </p>
-
-                        <h3>Objectifs du projet</h3>
-                        <p>
-                            L’objectif principal est de disposer d’un outil capable de recenser l’ensemble des ressources
-                            informatiques : matériels, logiciels, utilisateurs et tickets d’assistance.
-                            GLPI permet également d’optimiser la gestion des interventions et d’améliorer la traçabilité
-                            des actions réalisées par les équipes IT.
-                        </p>
-
-                        <h3>Mise en place technique</h3>
-                        <p>
-                            Le projet comprend l’installation de GLPI en local avec un environnement MAMP,
-                            la configuration du serveur web et de la base de données,
-                            ainsi que l’intégration de GLPI Agent pour automatiser la collecte des informations
-                            sur les postes clients.
-                        </p>
-
-                        <div class="glpi-images">
-                            <img src="./assets/images/Tableau_de_bord.png">
-                            <img src="./assets/images/assets.png">
-                            <img src="./assets/images/ordinateur.png">
+                        <!-- Assets -->
+                        <div class="glpi-block">
+                            <h3>Gestion des assets</h3>
+                            <p>
+                                La section "Assets" permet de gérer l’ensemble des ressources matérielles et logicielles
+                                de l’entreprise. On y retrouve les ordinateurs, imprimantes, équipements réseau,
+                                ainsi que les logiciels installés.
+                                Cette fonctionnalité est essentielle pour maintenir un inventaire précis du parc informatique,
+                                suivre l’état des équipements, et anticiper les besoins de maintenance ou de renouvellement.
+                            </p>
+                            <img src="./assets/images/assets.png" class="glpi-img">
                         </div>
 
-                        <h3>Fonctionnalités principales</h3>
+                        <!-- Ordinateur -->
+                        <div class="glpi-block">
+                            <h3>Fiche d’un ordinateur</h3>
+                            <p>
+                                La fiche détaillée d’un ordinateur fournit toutes les informations techniques liées à un poste :
+                                configuration matérielle, système d’exploitation, utilisateur associé, adresse IP,
+                                ainsi que l’historique des interventions.
+                                Grâce à l’intégration de GLPI Agent, ces données sont automatiquement remontées depuis les machines,
+                                ce qui permet de garantir une mise à jour continue et fiable des informations.
+                                Cette vue est particulièrement utile pour diagnostiquer rapidement un problème ou suivre
+                                l’évolution d’un équipement dans le temps.
+                            </p>
+                            <img src="./assets/images/ordinateur.png" class="glpi-img">
+                        </div>
 
-                        <ul class="glpi-list">
-                            <li>Gestion des équipements (ordinateurs, imprimantes, réseaux)</li>
-                            <li>Inventaire automatique via GLPI Agent</li>
-                            <li>Gestion des tickets et support IT</li>
-                            <li>Suivi des utilisateurs et des accès</li>
-                            <li>Tableaux de bord et statistiques</li>
-                        </ul>
+                    </div>
 
-                    </section>
+                    <h3>Fonctionnalités principales</h3>
+
+                    <ul class="glpi-list">
+                        <li>Gestion des équipements (ordinateurs, imprimantes, réseaux)</li>
+                        <li>Inventaire automatique via GLPI Agent</li>
+                        <li>Gestion des tickets et support IT</li>
+                        <li>Suivi des utilisateurs et des accès</li>
+                        <li>Tableaux de bord et statistiques</li>
+                    </ul>
+
+                </section>
 
 
             </div>
