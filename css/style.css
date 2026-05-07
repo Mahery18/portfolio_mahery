@@ -2615,3 +2615,77 @@ main>section.section:nth-of-type(even) {
 
 
 
+
+/* =========================
+   VEILLE TECHNOLOGIQUE
+========================= */
+
+.veille-section {
+    width: 100%;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background: #111827;
+    color: #fff;
+}
+
+.veille-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.veille-header i {
+    font-size: 30px;
+    color: #60a5fa;
+}
+
+.veille-header h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.veille-intro {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+.veille-section h3 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #60a5fa;
+}
+
+.veille-section p {
+    line-height: 1.9;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.veille-block {
+    margin-top: 40px;
+}
+
+.veille-img {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.veille-list {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.veille-list li {
+    margin-bottom: 12px;
+    color: #d1d5db;
+}
+
+
+
